@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BakersDen</title>
+    <link rel="icon" href="./assets/fav icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <aside id="nav_one">
+            <h1>Bakers Den</h1>
+        </aside>
+        <aside id="nav_two">
+            <a href="/">Home</a>
+            <a href="http://127.0.0.1:5501/About.html">About</a>
+            <a href="/Menu.html">Menu</a>
+            <a href="#">Contact</a>
+        </aside>
+        <aside id="nav_three">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="cart_quantity">0</div>
+            <p id="cart_price">₹0.00</p>
+        </aside>
+    </nav>
+    <section id="contact_page">
+        <aside id="contact_one">
+            <h1>Contact</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2595ecb0-a543-4376-91ce-47198527d000">
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="Email" email="email">
+                <textarea rows="4" cols="56" placeholder="Message" name="message"></textarea>
+                <input id="contact_button" type="submit" value="send">
+            </form>
+        </aside>
+        <aside id="contact_two">
+            <h1>Get in Touch</h1>
+            <div>
+                <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                <p><i class="fa-solid fa-envelope"></i> Bakersden@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> 420,Dilsuknagar,Hyderabad</p>
+            </div>
+            <img src="./assets/bakersDen2.png" alt="" height="260" width="500">
+        </aside>
+    </section>
+</body>
+</html>
