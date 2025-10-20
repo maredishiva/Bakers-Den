@@ -58,6 +58,7 @@ a {
     color: black;
     background-color: #e4cba6;
     position: relative;
+    overflow: hidden;
 }
 
 a:hover, a.active {
@@ -776,14 +777,21 @@ a.active::after, a:hover::after {
     }
     
     #bakery_desc {
-        height: auto;
-        padding: 30px 15px;
-        gap: 20px;
+        height: 18vh;
+        gap: 5px;
     }
     
     #bakery_desc h1 {
         font-size: 24px;
         text-align: center;
+
+    }
+    #bakery_desc p{
+        overflow: hidden;
+    }
+    #bakery_desc button{
+        overflow: hidden;
+        height: 70px;
     }
     
     #bakery_items h2 {
