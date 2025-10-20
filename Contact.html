@@ -11,13 +11,15 @@
 <body>
     <nav>
         <aside id="nav_one">
+            <!-- Add this hamburger button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
             <h1>Bakers Den</h1>
         </aside>
         <aside id="nav_two">
-            <a href="/">Home</a>
-            <a href="/About.html">About</a>
-            <a href="/Menu.html">Menu</a>
-            <a href="#">Contact</a>
+            <a href="/" onclick="closeMobileMenu()">Home</a>
+            <a href="/About.html" onclick="closeMobileMenu()">About</a>
+            <a href="/Menu.html" onclick="closeMobileMenu()">Menu</a>
+            <a href="#" onclick="closeMobileMenu()">Contact</a>
         </aside>
         <aside id="nav_three">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -46,5 +48,6 @@
             <img src="./assets/bakersDen2.png" alt="" height="260" width="500">
         </aside>
     </section>
+    <script src="./Menu.js"></script>
 </body>
 </html>

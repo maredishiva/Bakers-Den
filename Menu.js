@@ -51,11 +51,15 @@ cards.forEach((card)=>{
         if(qty>0){
             let existingItem = cart.find(item=>item.name==name)
             if(existingItem){
-                existingItem.qty += qty
+                existingItem.qty = qty
             }else{
                 cart.push({name,qty,price})
-                addBtn.style.background='green'
             }
+            // Reset button color after 500ms, runs every click (not only first click)
+            addBtn.style.background='green'
+            setTimeout(() => {
+                addBtn.style.background = 'chocolate'
+            }, 500)
             updateCart()
         }else{
             alert("Please add atleast 1 item")
@@ -138,6 +142,22 @@ close_sidebar.addEventListener("click",()=>{
     sidebar.style.right="-350px"
 })
 
+function toggleMobileMenu() {
+    const nav = document.getElementById('nav_two');
+    nav.classList.toggle('mobile-active');
+}
 
+function closeMobileMenu() {
+    const nav = document.getElementById('nav_two');
+    nav.classList.remove('mobile-active');
+}
 
-
+//! Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.getElementById('nav_two');
+    const button = document.querySelector('.mobile-menu-btn');
+    
+    if (!nav.contains(event.target) && !button.contains(event.target) && nav.classList.contains('mobile-active')) {
+        nav.classList.remove('mobile-active');
+    }
+});
