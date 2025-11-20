@@ -19,7 +19,7 @@ A fully responsive bakery website built using **HTML, CSS, and JavaScript** that
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/bakers-den.git
+   git clone https://github.com/maredishiva/bakers-den.git
 
 3. **Navigate to the project folder**
 
