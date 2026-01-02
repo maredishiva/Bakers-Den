@@ -903,7 +903,6 @@ a.active::after, a:hover::after {
         overflow: visible !important;
         visibility: visible !important;
         opacity: 1 !important;
-        /* border: 2px solid red; */
         margin-top: 40px;
         margin-right: 20px;
     }
@@ -978,7 +977,6 @@ a.active::after, a:hover::after {
         align-items: center;
         justify-content: center;
         color: white;
-
     }
     
     #cart_price {
@@ -1112,8 +1110,6 @@ a.active::after, a:hover::after {
         padding: 35px 20px;
         margin: 20px 10px;
         gap: 15px;
-        margin-bottom: 250px;
-
     }
     
     #address_details h2 {
@@ -1136,27 +1132,21 @@ a.active::after, a:hover::after {
     
     #about_sec h1 {
         font-size: 24px;
-
     }
     
     #desc_one h1, #desc_three h1 {
         font-size: 20px;
-
     }
     
     #contact_page {
         padding: 80px 15px 30px;
         gap: 30px;
         flex-direction: column;
-        margin-bottom: 230px;
-
     }
     #visit_section {
         gap: 20px;
         padding: 15px;
         flex-direction: column;
-        margin-bottom: 240px;
-
     }
     
     #contact_one, #contact_two {
@@ -1185,7 +1175,6 @@ a.active::after, a:hover::after {
         grid-template-columns: 1fr;
         gap: 15px;
         padding: 15px;
-        margin-bottom: 220px;
     }
     
     .card {
@@ -1226,7 +1215,6 @@ a.active::after, a:hover::after {
         width: calc(100% - 30px);
         height: 45px;
         font-size: 16px;
-        margin-bottom: 215px;
     }
     #main_menu{
         position: relative;
