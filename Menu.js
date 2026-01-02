@@ -120,36 +120,46 @@ function updateCart() {
 
 //! Buy Now button logic
 let buyBtn = document.getElementById("buyBtn")
-buyBtn.addEventListener("click", () => {
-  if (cart.length === 0) {
-    alert("Your cart is empty!")
-  } else {
-    alert("Thank you for your purchase!")
-    cart = [] 
-    updateCart()
-  }
-})
+if (buyBtn) {
+  buyBtn.addEventListener("click", () => {
+    if (cart.length === 0) {
+      alert("Your cart is empty!")
+    } else {
+      alert("Thank you for your purchase!")
+      cart = [] 
+      updateCart()
+    }
+  })
+}
 
 // todo. Sidebar Functionality
 let cart_icon = document.getElementById("cart_icon")
 let sidebar = document.getElementById("sidebar")
-cart_icon.addEventListener("click",()=>{
-    sidebar.style.right="0px"
-})
+if (cart_icon && sidebar) {
+  cart_icon.addEventListener("click",()=>{
+      sidebar.style.right="0px"
+  })
+}
 
 let close_sidebar = document.getElementById("close_sidebar")
-close_sidebar.addEventListener("click",()=>{
-    sidebar.style.right="-350px"
-})
+if (close_sidebar && sidebar) {
+  close_sidebar.addEventListener("click",()=>{
+      sidebar.style.right="-350px"
+  })
+}
 
 function toggleMobileMenu() {
     const nav = document.getElementById('nav_two');
-    nav.classList.toggle('mobile-active');
+    if (nav) {
+        nav.classList.toggle('mobile-active');
+    }
 }
 
 function closeMobileMenu() {
     const nav = document.getElementById('nav_two');
-    nav.classList.remove('mobile-active');
+    if (nav) {
+        nav.classList.remove('mobile-active');
+    }
 }
 
 //! Close menu when clicking outside
@@ -157,7 +167,7 @@ document.addEventListener('click', function(event) {
     const nav = document.getElementById('nav_two');
     const button = document.querySelector('.mobile-menu-btn');
     
-    if (!nav.contains(event.target) && !button.contains(event.target) && nav.classList.contains('mobile-active')) {
+    if (nav && button && !nav.contains(event.target) && !button.contains(event.target) && nav.classList.contains('mobile-active')) {
         nav.classList.remove('mobile-active');
     }
 });

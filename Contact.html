@@ -32,9 +32,9 @@
             <h1>Contact</h1>
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="2595ecb0-a543-4376-91ce-47198527d000">
-                <input type="text" placeholder="Name" name="name">
-                <input type="email" placeholder="Email" email="email">
-                <textarea rows="4" cols="56" placeholder="Message" name="message"></textarea>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea rows="4" cols="56" placeholder="Message" name="message" required></textarea>
                 <input id="contact_button" type="submit" value="send">
             </form>
         </aside>
